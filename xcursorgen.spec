@@ -34,6 +34,6 @@ rm -rf %{buildroot}
 %files
 %defattr(-,root,root)
 %{_bindir}/xcursorgen
-%{_mandir}/man1/xcursorgen.1x.bz2
+%{_mandir}/man1/xcursorgen.*
 
 
