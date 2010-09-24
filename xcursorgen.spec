@@ -1,5 +1,5 @@
 Name: xcursorgen
-Version: 1.0.3
+Version: 1.0.4
 Release: %mkrel 1
 Summary: Create an X cursor file from a collection of PNG images
 Group: Development/X11
