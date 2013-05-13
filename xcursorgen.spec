@@ -7,9 +7,9 @@ Source: http://xorg.freedesktop.org/releases/individual/app/%{name}-%{version}.t
 License: MIT
 BuildRoot: %{_tmppath}/%{name}-root
 
-BuildRequires: libpng-devel >= 1.2.8
-BuildRequires: libx11-devel >= 1.0.0
-BuildRequires: libxcursor-devel >= 1.1.5.2
+BuildRequires: pkgconfig(libpng) >= 1.2.8
+BuildRequires: pkgconfig(x11) >= 1.0.0
+BuildRequires: pkgconfig(xcursor) >= 1.1.5.2
 BuildRequires: x11-util-macros >= 1.0.1
 
 %description
