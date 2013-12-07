@@ -1,6 +1,6 @@
 Name: xcursorgen
 Version: 1.0.5
-Release: 3
+Release: 4
 Summary: Create an X cursor file from a collection of PNG images
 Group: Development/X11
 Source: http://xorg.freedesktop.org/releases/individual/app/%{name}-%{version}.tar.bz2
