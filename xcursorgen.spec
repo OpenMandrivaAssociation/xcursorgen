@@ -1,6 +1,6 @@
 Name:		xcursorgen
-Version:	1.0.6
-Release:	9
+Version:	1.0.7
+Release:	1
 Summary:	Create an X cursor file from a collection of PNG images
 Group:		Development/X11
 Source:		http://xorg.freedesktop.org/releases/individual/app/%{name}-%{version}.tar.bz2
@@ -15,19 +15,18 @@ BuildRequires:	x11-util-macros >= 1.0.1
 Xcursorgen creates an X cursor file from a collection of PNG images.
 
 %prep
-%setup -q -n %{name}-%{version}
+%autosetup -n %{name}-%{version} -p1
 
 %build
 %configure \
-	--x-includes=%{_includedir} \
+    --x-includes=%{_includedir} \
     --x-libraries=%{_libdir}
 
-%make
+%make_build
 
 %install
-%makeinstall_std
+%make_install
 
 %files
-%defattr(-,root,root)
 %{_bindir}/xcursorgen
 %{_mandir}/man1/xcursorgen.*
